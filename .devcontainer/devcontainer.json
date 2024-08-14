@@ -1,0 +1,32 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/go-postgres
+{
+	"name": "example-pulumi-gcp-go code space",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"remoteUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"autoOpenWorkspace.enableAutoOpenAlwaysFirst": true
+			},
+			"extensions": [
+				"ms-vscode.go",
+				"esbenp.prettier-vscode",
+				"wmaurer.change-case",
+				"streetsidesoftware.code-spell-checker",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.vscode-pull-request-github",
+				"zoma.vscode-auto-open-workspace",
+				"DavidAnson.vscode-markdownlint"
+			]
+		}
+	},
+	"remoteEnv": {
+		"PULUMI_ACCESS_TOKEN": "${localEnv:EXAMPLE_PULUMI_GCP_GO_PULUMI_ACCESS_TOKEN}",
+		"GCP_PROJECT_ID": "${localEnv:EXAMPLE_PULUMI_GCP_GO_GCP_PROJECT_ID}",
+		"STACK_NAME": "${localEnv:EXAMPLE_PULUMI_GCP_GO_STACK_NAME}"
+	}
+}

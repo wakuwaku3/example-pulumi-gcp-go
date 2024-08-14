@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "module1",
+			"path": "module1"
+		},
+		{
+			"name": "module2",
+			"path": "module2"
+		},
+		{
+			"name": "shared-module",
+			"path": "shared-module"
+		},
+	],
+	"settings": {
+		"go.lintTool": "golangci-lint",
+		"go.lintOnSave": "workspace",
+		"cSpell.ignorePaths": [
+			".git/objects",
+			".vscode",
+			".devcontainer/devcontainer.json",
+			"monorepo.code-workspace",
+		],
+		"cSpell.words": [
+			"Anson",
+			"devcontainer",
+			"gcloud",
+			"golangci",
+			"Pulumi"
+		],
+		"[markdown]": {
+			"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+		},
+	}
+}
